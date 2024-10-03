@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:white !important;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: white;
+    padding: 1em 2em;
+
+}
+
+.logo {
+    font-size: 1em;
+    font-weight: ;
+    color: black;
+    font-weight: bold;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #18181B;
+
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-left: 10em;
+    color: #18181B;
+}
+
+.nav-links li {
+    margin-left: 2em;
+    align-items: center;
+    color: #18181B;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    align-items: flex-end;
+    color: #18181B;
+}
+
+.btn-login {
+    background-color: white;
+    color: black;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 1.5em;
+}
+
+.btn-signup {
+    background-color: black;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.desktop-only {
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    padding: 5em 2em;
+    background-color: #f1f1f1;
+    align-items: center;
+}
+.hero-title{
+    color: 52525B;
+
+}
+
+.hero-subtitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 45px;
+    text-align: center;
+    color: black;
+    margin-top: 0.7em;
+    align-items: center;
+}
+
+.hero-subtitle-2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 45px;
+    text-align: center;
+    color: black;
+    align-items: center;
+
+}
+
+.highlight {
+    color: gray;
+}
+.btn-space{
+    margin-right: 0.5em;
+    color: #71717A;
+
+}
+.btn-space2{
+    margin-left: 0.5em;
+     color:#71717A
+}
+
+.ai-text {
+    font-size: 36px;
+    background-image: linear-gradient(to right, #ff0080, #be17be, #0000ff, #3017c3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+   
+}
+
+.btn-create-account {
+    padding: 0.7em 2em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 3em;
+
+}
+
+.dashboard-img {
+    margin-top: 2em;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 4em;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        align-items: center;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.show {
+        display: flex;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .dashboard-img {
+        width: 90%;
+    }
+    .ai-text{
+        font-size: 48px;
+        
+    }
+}
